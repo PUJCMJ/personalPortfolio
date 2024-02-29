@@ -3,21 +3,21 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav>
-      <ul>
-        <li>
-          <NavLink to="/contact">Contact</NavLink>
+      <ul className="flex justify-between mt-10 mr-60 ml-60 ">
+        <li className="flex-1 ml-10 mr-10 rounded-3xl">
+          <NavLink to="/contact" className="block  p-4 rounded-3xl text-center shadow-slate-600">Contact</NavLink>
         </li>
-        <li>
-          <NavLink to="/resume">Resume</NavLink>
+        <li className="flex-1 ml-10 mr-10  rounded-3xl">
+          <NavLink to="/" className="block  p-4 rounded-3xl text-center shadow-slate-600">Resume</NavLink>
         </li>
-        <li>
-          <NavLink to="/about">About</NavLink>
+        <li className="flex-1 ml-10 mr-10  rounded-3xl">
+          <NavLink to="/about" className="block  p-4 rounded-3xl text-center  shadow-slate-600">About</NavLink>
         </li>
-        <li>
-          <NavLink to="/certificates">Certificates</NavLink>
+        <li className="flex-1 ml-10 mr-10  rounded-3xl ">
+          <NavLink to="/certificates" className="block  p-4 rounded-3xl text-center shadow-slate-600">Certificates</NavLink>
         </li>
-        <li>
-          <NavLink to="/projects">Projects</NavLink>
+        <li className="flex-1 ml-10 mr-10  rounded-3xl shadow-lg shadow-slate-600 ">
+          <NavLink to="/projects" className="block  p-4 rounded-3xl text-center  shadow-slate-600 ">Projects</NavLink>
         </li>
       </ul>
     </nav>
