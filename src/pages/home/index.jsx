@@ -18,7 +18,7 @@ const Home = () => {
       </h2>
 
       <div className=' mx-auto relative top-14 flex items-center justify-between rounded-3xl p-4 bg-slate-500 h-12 w-60 mt-10 '>
-        <span className='ml-4 mr-4'><img src={githubImage}/></span>
+        <a className='ml-4 mr-4' href='https://github.com/PUJCMJ'><img src={githubImage}/></a>
         <span className='ml-4 mr-4'><img src={linkedinImage}/></span>
         <span className='ml-4 mr-4'><img src={whatsappImage}/></span>
       </div>
