@@ -1,21 +1,26 @@
+import userImage from '../../img/user.jpg';
+import githubImage from '../../img/github.png';
+import linkedinImage from '../../img/linkedin.png';
+import whatsappImage from '../../img/whatsapp.png';
+
+
 const Home = () => {
   return (
-    <div className=" flex flex-row relative w-full h-full">
-      <div className="mx-auto text-center justify-center">
-        <img className="rounded-full relative " src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.atlassian.com%2Fagile%2Fproject-management%2Fuser-stories&psig=AOvVaw2WtEpNywFok8ysjdCZ_eLR&ust=1709303096515000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCOCy3q3g0IQDFQAAAAAdAAAAABAE"/>
-        <p className="relative top-10 items-center justify-center ">
-          Mi trabajo consiste en el desarrollo de paginas web, desde el diseño
-          de las mismas como en el desarrollo y su produccion. Actualmente soy
-          free-lancer y normalmente trabajo como frontend developer, sin embargo
-          tambien tengo experiencia en backend. Mi trabajo consiste en el
-          desarrollo de paginas web, desde el diseño de las mismas como en el
-          desarrollo y su produccion. Actualmente soy free-lancer y normalmente
-          trabajo como frontend developer, sin embargo tambien tengo experiencia
-          en backend. Mi trabajo consiste en el desarrollo de paginas web, desde
-          el diseño de las mismas como en el desarrollo y su produccion.
-          Actualmente soy free-lancer y normalmente trabajo como frontend
-          developer, sin embargo tambien tengo experiencia en backend.
-        </p>
+    <div className='block bg-inherit'>
+      <figure className="relative m-2 flex ">
+        <img src={userImage} alt='user' className='rounded-full h-40 mx-auto shadow-lg shadow-slate-500' />
+      </figure>
+      <h1 className="relative top-14 flex items-center justify-center  text-3xl font-poppins font-bold text-amber-300 ">
+       Software engineer
+      </h1>
+      <h2 className='relative top-14 flex items-center justify-center  text-lg font-poppins font-bold text-stone-500 '>
+      Passionate About: Web Development (Front-End & Back-End)
+      </h2>
+
+      <div className=' mx-auto relative top-14 flex items-center justify-between rounded-3xl p-4 bg-slate-500 h-12 w-60 mt-10 '>
+        <span className='ml-4 mr-4'><img src={githubImage}/></span>
+        <span className='ml-4 mr-4'><img src={linkedinImage}/></span>
+        <span className='ml-4 mr-4'><img src={whatsappImage}/></span>
       </div>
     </div>
   );
