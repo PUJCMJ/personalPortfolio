@@ -7,6 +7,7 @@ import Contact from '../../components/contact';
 import MainLayout from '../../layouts/mainLayout';
 import Home from '../home/index';
 
+
 function App() {
   return (
     <BrowserRouter>
