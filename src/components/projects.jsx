@@ -45,11 +45,18 @@ const Proyects = () => {
     <div>
       <div className="flex">
         <div className="relative rounded-xl shadow-xl overflow-hidden w-[600px] h-[400px] mt-3 left-8">
-          <img
-            src={sliderContent[activeSlide].img}
-            alt="slideImg"
-            className="h-full w-full absolute object-cover inset-0 transition duration-[0.75s]"
-          />
+          {sliderContent.map((slide, i) => (
+            <img
+              src={slide.img}
+              key={i}
+              alt="slideImg"
+              className={`h-full w-full absolute object-cover inset-0 transition duration-[0.75s] transform-gpu ${
+                i === activeSlide
+                  ? "opacity-100 scale-100"
+                  : "opacity-0 scale-90"
+              }`}
+            />
+          ))}
           <div className="absolute inset-y-0 flex items-center justify-between w-full px-4">
             <button id="back" className="z-10" onClick={() => Slide("prev")}>
               <ion-icon name="chevron-back-outline" size="large"></ion-icon>
@@ -74,7 +81,9 @@ const Proyects = () => {
         <div className="bg-gray-400/50 p-4 justify-center items-center flex rounded-full shadow-xl w-96 h-20 fixed top-[572px] transform -translate-y-1/2 right-60">
           <div className="text-md font-sm relative flex bg-gray-200/40 justify-center items-center  rounded-full  w-80 h-10 transform transition-transform duration-300 hover:scale-110 ">
             <img src={githubImage} className="w-6 absolute mr-[180px]" />
-            <a href={sliderContent[activeSlide].link} className="ml-5">Github Repository</a>
+            <a href={sliderContent[activeSlide].link} className="ml-5">
+              Github Repository
+            </a>
           </div>
         </div>
       </div>
