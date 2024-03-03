@@ -79,9 +79,9 @@ const Proyects = () => {
           </div>
         </div>
         <div className="bg-gray-400/50 p-4 justify-center items-center flex rounded-full shadow-xl w-96 h-20 fixed top-[572px] transform -translate-y-1/2 right-60">
-          <div className="text-md font-sm relative flex bg-gray-200/40 justify-center items-center  rounded-full  w-80 h-10 transform transition-transform duration-300 hover:scale-110 ">
+          <div className="text-md font-md relative flex bg-gray-300/40 justify-center items-center  rounded-full border-4 border-slate-400 w-80 h-10 transform transition-transform duration-300 hover:scale-110">
             <img src={githubImage} className="w-6 absolute mr-[180px]" />
-            <a href={sliderContent[activeSlide].link} className="ml-5">
+            <a href={sliderContent[activeSlide].link} className="ml-5 text-slate-100">
               Github Repository
             </a>
           </div>
