@@ -2,16 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.clip-hidden {
-    clip-path: ellipse(0 0 at 0% 0%);
-    opacity: 0;
-    z-index: 0;
-  }
-  .clip-visible {
-    clip-path: ellipse(750px 750px at 0% 0%);
-    opacity: 1;
-    z-index: 6;
-  }
+
   
   #back,
   #forward {
@@ -22,3 +13,13 @@
     @apply text-[aliceblue] absolute w-full z-[5] text-center backdrop-blur-[2px] duration-[1s] px-0 py-[15px] left-0 bottom-0;
     background: #ffffff22;
   }
+
+
+  a {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    transform: scale(1.2);
+  }
+  
