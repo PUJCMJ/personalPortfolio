@@ -1,7 +1,7 @@
-import userImage from "../../img/user.jpg";
-import githubImage from "../../img/github.png";
-import linkedinImage from "../../img/linkedin.png";
-import whatsappImage from "../../img/whatsapp.png";
+import userImage from "../../assets/img/user.jpg";
+import githubImage from "../../assets/img/github.png";
+import linkedinImage from "../../assets/img/linkedin.png";
+import whatsappImage from "../../assets/img/whatsapp.png";
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
         <img
           src={userImage}
           alt="user"
-          className="rounded-full h-60 mx-auto shadow-custom"
+          className="rounded-full h-60 w-[250px] mx-auto shadow-custom"
         />
       </figure>
       <h1 className="relative top-8 flex items-center justify-center  text-3xl font-poppins font-bold text-amber-300 ">

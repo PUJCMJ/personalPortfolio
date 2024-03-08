@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import img1 from "../img/img1.jpg";
-import img2 from "../img/img2.jpg";
-import img3 from "../img/img3.jpg";
-import img4 from "../img/img4.jpg";
-import githubImage from "../img/github 2.png";
+import { useState } from "react";
+import img1 from "../assets/img/img1.jpg";
+import img2 from "../assets/img/img2.jpg";
+import img3 from "../assets/img/img3.jpg";
+import img4 from "../assets/img/img4.jpg";
+import githubImage from "../assets/img/github 2.png";
 
 const Proyects = () => {
   const [activeSlide, setActiveSlide] = useState(0);
