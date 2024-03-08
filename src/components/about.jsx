@@ -11,7 +11,7 @@ const About = () => {
   return (
     <>
       <div className=" border-slate-100 border-2xl bg-blue-500/10 rounded-3xl items-center shadow-xl w-[700px] h-[400px] relative flex p-10">
-        <div className=" absolute top-8 mr-10 ml-5 text-slate-300/70">
+        <div className=" absolute top-8 mr-10 ml-2.5 text-slate-300/70">
           <p className="top-0">
             Greetings! I am Carlos Mejia, a dedicated software developer
             currently pursuing my education at Pontificia Universidad Javeriana.
